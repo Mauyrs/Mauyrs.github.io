@@ -8,7 +8,7 @@
     <script>
         function switchLED(state) {
             fetch(`https://8a46-2803-9800-9542-7144-884c-2c37-b32b-efad.ngrok.io/LED=${state}`, {
-                method: 'GET',
+                method: 'POST',
                 mode: 'no-cors'
             });
         }
