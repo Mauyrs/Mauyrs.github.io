@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Control de LED</h1>
+    <button onclick="switchLED('ON')">Encender</button>
+    <button onclick="switchLED('OFF')">Apagar</button>
+
+    <script>
+        function switchLED(state) {
+            fetch(`http://<NodeMCU-IP>/LED=${state}`);
+        }
+    </script>
+</body>
+</html>
